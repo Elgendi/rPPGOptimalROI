@@ -1,5 +1,5 @@
 """
-The experiment for the correlation analysis between skin thickness and ROI performance.
+the experiment for the correlation analysis between skin thickness and ROI performance.
 """
 
 # Author: Shuo Li
@@ -50,6 +50,7 @@ def main_corr_skin(metric, skin, list_algorithm):
         data_skin.append(df_anatomy.loc[df_anatomy['ROI'].values==roi_tmp, skin+'_thickness'].mean())
     data_skin = np.array(data_skin)
     # visualization.
+    plt.cla()
     plt.xticks(fontsize=17)
     plt.yticks(fontsize=17)
     sns.regplot(x=skin, 
@@ -74,10 +75,11 @@ def main_corr_skin(metric, skin, list_algorithm):
                       'F-statistic: '+str(result.fvalue), '\n',
                       'F-pvalue: '+str(result.f_pvalue), '\n'])
 
+
 if __name__ == "__main__":
     list_algorithm = ['CHROM', 'POS', 'LGI', 'OMIT']   # ['LGI', 'OMIT', 'CHROM', 'POS'].
-    list_metric = ['MAE', 'RMSE', 'PCC', 'CCC', 'DTW']
-    list_skin = ['dermal', 'epidermal']
+    list_metric = ['MAE', 'RMSE', 'PCC', 'CCC', 'DTW']   # ['MAE', 'RMSE', 'PCC', 'CCC', 'DTW'].
+    list_skin = ['dermal', 'epidermal']   # ['dermal', 'epidermal'].
     # create the description file.
     with open(os.path.join(os.getcwd(), 'plot', 'corr', 'description_skin.txt'), 'w') as f:
         pass

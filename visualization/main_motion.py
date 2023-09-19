@@ -1,5 +1,5 @@
 """
-The experiment for examining the effect of ROI selection under different subject's motion types.
+the experiment for examining the effect of ROI selection under different subject's motion types.
 """
 
 # Author: Shuo Li
@@ -76,8 +76,8 @@ def main(metric, motion, list_algorithm):
 
 if __name__ == "__main__":
     list_algorithm = ['CHROM', 'POS', 'LGI', 'OMIT']   # ['LGI', 'OMIT', 'CHROM', 'POS'].
-    list_metric = ['MAE', 'RMSE', 'PCC', 'CCC', 'DTW']
-    list_motion = ['resting', 'gym', 'rotation', 'talk']
+    list_metric = ['MAE', 'RMSE', 'PCC', 'CCC', 'DTW']   # ['MAE', 'RMSE', 'PCC', 'CCC', 'DTW'].
+    list_motion = ['resting', 'gym', 'rotation', 'talk']   # ['resting', 'gym', 'rotation', 'talk'].
     # create the description file.
     with open(os.path.join(os.getcwd(), 'plot', 'motion', 'description.txt'), 'w') as f:
         pass

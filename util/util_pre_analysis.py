@@ -1,5 +1,5 @@
 """
-Utils for the preliminary analysis of the optimal ROI selection under different conditions.
+utils for the preliminary analysis of the optimal ROI selection under different conditions.
 """
 
 # Author: Shuo Li

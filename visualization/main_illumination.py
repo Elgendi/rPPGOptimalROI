@@ -1,5 +1,5 @@
 """
-The experiment for examining the effect of ROI selection under different light intensity.
+the experiment for examining the effect of ROI selection under different light intensity.
 """
 
 # Author: Shuo Li
@@ -15,7 +15,7 @@ def main_illumination(metric, list_roi_name, list_algorithm):
     Parameters
     ----------
     metric: selecte evaluation metric.   # ['MAE', 'RMSE', 'PCC', 'CCC', 'DTW'].
-    list_roi_name: list of selected ROIs.
+    list_roi_name: list of selected ROIs.   # 28 facial ROIs.
     list_algorithm: list of selected rPPG algorithms.   # ['CHROM', 'POS', 'LGI', 'OMIT'].
     
     Returns
@@ -58,10 +58,10 @@ def main_illumination(metric, list_roi_name, list_algorithm):
 
 
 if __name__ == "__main__":
-    list_algorithm = ['LGI', 'OMIT', 'CHROM', 'POS']
-    list_metric = ['MAE', 'RMSE', 'PCC', 'CCC', 'DTW']
+    list_algorithm = ['LGI', 'OMIT', 'CHROM', 'POS']   # ['LGI', 'OMIT', 'CHROM', 'POS'].
+    list_metric = ['MAE', 'RMSE', 'PCC', 'CCC', 'DTW']   # ['MAE', 'RMSE', 'PCC', 'CCC', 'DTW'].
     list_roi_name = ['lower medial forehead', 'left lower lateral forehead', 'right lower lateral forehead', 
-                     'glabella', 'left malar', 'right malar', 'left lower cheek', 'right lower cheek']
+                     'glabella', 'left malar', 'right malar', 'left lower cheek', 'right lower cheek']   # 28 facial ROIs.
     # loop over all selected evaluation metrics.
     for metric in list_metric:
         print([metric])

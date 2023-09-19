@@ -1,5 +1,5 @@
 """
-Transform RGB signals to BVP and HR signals.
+transform raw RGB traces to BVP and HR signals.
 """
 
 # Author: Shuo Li
@@ -10,12 +10,10 @@ import sys
 import cv2
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
+from tqdm import tqdm
 dir_crt = os.getcwd()
 sys.path.append(os.path.join(dir_crt, 'util'))
 import util_pre_analysis
-import pyVHR
-from tqdm import tqdm
 
 
 def main_rgb2hr(name_dataset, algorithm):
@@ -23,8 +21,8 @@ def main_rgb2hr(name_dataset, algorithm):
     Parameters
     ----------
     name_dataset: name of the selected dataset.
-                  [UBFC-rPPG, UBFC-Phys, LGI-PPGI, BH-rPPG, ECG-fitness].
-    algorithm: selected rPPG algorithm. ['CHROM', 'GREEN', 'ICA', 'LGI', 'OMIT', 'PBV', 'PCA', 'POS'].
+                  ['UBFC-rPPG', 'UBFC-Phys', 'LGI-PPGI', 'BUAA-MIHR'].
+    algorithm: selected rPPG algorithm. ['CHROM', 'LGI', 'OMIT', 'POS'].
     
     Returns
     -------
@@ -185,9 +183,9 @@ def main_rgb2hr(name_dataset, algorithm):
 
 if __name__ == "__main__":
     # available datasets.
-    list_dataset = ['UBFC-Phys']
+    list_dataset = ['UBFC-Phys']   # ['UBFC-rPPG', 'UBFC-Phys', 'LGI-PPGI', 'BUAA-MIHR'].
     # selected rPPG algorithms.
-    list_algorithm = ['LGI', 'OMIT', 'CHROM', 'POS']
+    list_algorithm = ['LGI', 'OMIT', 'CHROM', 'POS']   # ['LGI', 'OMIT', 'CHROM', 'POS'].
     for name_dataset in list_dataset:
         for algorithm in list_algorithm:
             print([name_dataset, algorithm])

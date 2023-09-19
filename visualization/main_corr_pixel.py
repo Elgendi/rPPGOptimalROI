@@ -1,5 +1,5 @@
 """
-The experiment for the correlation analysis between ROI area (number of pixels) and ROI performance.
+the experiment for the correlation analysis between ROI area (number of pixels) and ROI performance.
 """
 
 # Author: Shuo Li
@@ -79,9 +79,10 @@ def main_corr_pixel(metric, list_algorithm):
                       'F-statistic: '+str(result.fvalue), '\n', 
                       'F-pvalue: '+str(result.f_pvalue), '\n'])
 
+
 if __name__ == "__main__":
-    list_algorithm = ['LGI', 'OMIT', 'CHROM', 'POS']
-    list_metric = ['MAE', 'RMSE', 'PCC', 'CCC', 'DTW']
+    list_algorithm = ['LGI', 'OMIT', 'CHROM', 'POS']   # ['LGI', 'OMIT', 'CHROM', 'POS'].
+    list_metric = ['MAE', 'RMSE', 'PCC', 'CCC', 'DTW']   # ['MAE', 'RMSE', 'PCC', 'CCC', 'DTW'].
     # create the description file.
     with open(os.path.join(os.getcwd(), 'plot', 'corr', 'description_num_pixel.txt'), 'w') as f:
         pass

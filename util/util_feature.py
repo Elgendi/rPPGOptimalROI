@@ -1,13 +1,13 @@
 """
-Utils for feature extraction.
+utils for feature extraction. included features: ROI size (number of pixels), facial surface orientation.
 """
 
 # Author: Shuo Li
 # Date: 2023/07/23
 
 import cv2
-import open3d as o3d
 import numpy as np
+import open3d as o3d
 
 
 def surface_orientation(loc_landmark, list_roi_num):

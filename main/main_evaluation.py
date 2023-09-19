@@ -1,16 +1,14 @@
 """
-Evaluation of different rPPG methods.
+performance evaluation of different rPPG methods.
 """
 
 # Author: Shuo Li
-# Date: 2023/05/05
+# Date: 2023/08/05
 
 import os
 import sys
-import cv2
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 dir_crt = os.getcwd()
 sys.path.append(os.path.join(dir_crt, 'util'))
 import util_pre_analysis
@@ -21,8 +19,8 @@ def main_eval(name_dataset='UBFC-rPPG', algorithm='CHROM'):
     Parameters
     ----------
     name_dataset: name of the selected rPPG dataset. 
-                  ['UBFC-rPPG', 'UBFC-Phys', 'LGI-PPGI', 'ECG-fitness', 'BH-rPPG'].
-    algorithm: selected rPPG algorithm. ['CHROM', 'GREEN', 'ICA', 'LGI', 'OMIT', 'PBV', 'PCA', 'POS'].
+                  ['UBFC-rPPG', 'UBFC-Phys', 'LGI-PPGI', 'BUAA-MIHR'].
+    algorithm: selected rPPG algorithm. ['CHROM', 'LGI', 'OMIT', 'POS'].
 
     Returns
     -------
@@ -172,9 +170,11 @@ def main_eval(name_dataset='UBFC-rPPG', algorithm='CHROM'):
 
 
 if __name__ == "__main__":
-    list_dataset = ['UBFC-Phys']  # ['UBFC-rPPG', 'UBFC-Phys', 'LGI-PPGI', 'BUAA-MIHR']
-    list_algorithm = ['OMIT', 'LGI', 'CHROM', 'POS']  # ['CHROM', 'POS', 'LGI', 'OMIT', 'PBV', 'GREEN', 'PCA', 'ICA']
+    list_dataset = ['UBFC-Phys']  # ['UBFC-rPPG', 'UBFC-Phys', 'LGI-PPGI', 'BUAA-MIHR'].
+    list_algorithm = ['OMIT', 'LGI', 'CHROM', 'POS']  # ['CHROM', 'LGI', 'OMIT', 'POS'].
+    # loop over all selected rPPG datasets.
     for name_dataset in list_dataset:
+        # loop over all selected rPPG algorithms.
         for algorithm in list_algorithm:
             print([name_dataset, algorithm])
             main_eval(name_dataset=name_dataset, algorithm=algorithm)

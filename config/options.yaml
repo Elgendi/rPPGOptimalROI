@@ -1,6 +1,6 @@
-# Parameters for preliminary analysis.
-# Author: Shuo Li
-# Date: 2023/05/30
+# parameters for preliminary analysis.
+# author: Shuo Li
+# date: 2023/05/30
 
 UBFC-rPPG:  # UBFC-rPPG dataset. 
   url: https://sites.google.com/view/ybenezeth/ubfcrppg

@@ -1,15 +1,15 @@
 """
-Compare the performance difference when considering beard occlusion.
+compare the performance difference when considering beard occlusion.
 """
 
 # Author: Shuo Li
 # Date: 2023/09/11
 
 import os
-from scipy import stats
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+from scipy import stats
 
 def main_comparison_beard(metric, ROI, list_algorithm):
     """main function to examine the influence of beard on HR estimation accuracy.
@@ -112,9 +112,9 @@ def main_comparison_beard(metric, ROI, list_algorithm):
 
 
 if __name__ == "__main__":
-    list_algorithm = ['CHROM', 'POS']   # ['LGI', 'OMIT', 'CHROM', 'POS'].
-    list_metric = ['MAE', 'RMSE', 'PCC', 'CCC', 'DTW']
-    list_ROI = ['philtrum', 'glabella', 'right upper lip', 'left upper lip']
+    list_algorithm = ['LGI', 'OMIT', 'CHROM', 'POS']   # ['LGI', 'OMIT', 'CHROM', 'POS'].
+    list_metric = ['MAE', 'RMSE', 'PCC', 'CCC', 'DTW']   # ['MAE', 'RMSE', 'PCC', 'CCC', 'DTW'].
+    list_ROI = ['philtrum', 'glabella', 'right upper lip', 'left upper lip']   # 28 facial ROIs.
     # create the description file.
     with open(os.path.join(os.getcwd(), 'plot', 'occlusion', 'description_beard.txt'), 'w') as f:
         pass
@@ -122,4 +122,5 @@ if __name__ == "__main__":
     for metric in list_metric:
         # loop over all selected ROIs.
         for ROI in list_ROI:
+            print([metric, ROI])
             main_comparison_beard(metric=metric, ROI=ROI, list_algorithm=list_algorithm)

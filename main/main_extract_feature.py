@@ -1,5 +1,5 @@
 """
-Extract RGB signals from videos.
+extract relevant features from videos. included features: ROI size (number of pixels), facial surface orientation.
 """
 
 # Author: Shuo Li
@@ -7,11 +7,12 @@ Extract RGB signals from videos.
 
 import os
 import sys
+import pyVHR
+from tqdm import tqdm
 dir_crt = os.getcwd()
 sys.path.append(os.path.join(dir_crt, 'util'))
 import util_pre_analysis
-import pyVHR
-from tqdm import tqdm
+
 
 
 def main_extract_feature(name_dataset):
@@ -65,12 +66,6 @@ def main_extract_feature(name_dataset):
                 dir_save_data = os.path.join(dir_crt, 'data', name_dataset, 'feature', str(num_attendant)+'.csv')
                 df_feature.to_csv(dir_save_data, index=False)
 
-    elif name_dataset == 'LGI-PPGI':
-        pass
- 
-    elif name_dataset == 'BUAA-MIHR':
-        pass
-
 
 if __name__ == "__main__":
-    main_extract_feature(name_dataset='UBFC-Phys')   # ['UBFC-rPPG', 'UBFC-Phys', 'LGI-PPGI', 'BUAA-MIHR']
+    main_extract_feature(name_dataset='UBFC-rPPG')   # ['UBFC-rPPG', 'UBFC-Phys']

@@ -1,5 +1,5 @@
 """
-Extract RGB signals from videos.
+extract raw RGB traces from facial videos.
 """
 
 # Author: Shuo Li
@@ -7,14 +7,12 @@ Extract RGB signals from videos.
 
 import os
 import sys
-import cv2
-import numpy as np
+import pyVHR
 import pandas as pd
+from tqdm import tqdm
 dir_crt = os.getcwd()
 sys.path.append(os.path.join(dir_crt, 'util'))
 import util_pre_analysis
-import pyVHR
-from tqdm import tqdm
 
 
 def main_extract_rgb(name_dataset):

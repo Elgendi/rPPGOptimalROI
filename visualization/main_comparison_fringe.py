@@ -1,15 +1,15 @@
 """
-Compare the performance difference when considering fringe occlusion.
+compare the performance difference when considering fringe occlusion.
 """
 
 # Author: Shuo Li
 # Date: 2023/09/11
 
 import os
-from scipy import stats
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+from scipy import stats
 
 def main_comparison_fringe(metric, ROI, list_algorithm):
     """main function to examine the influence of fringe on HR estimation accuracy.
@@ -112,9 +112,9 @@ def main_comparison_fringe(metric, ROI, list_algorithm):
 
 
 if __name__ == "__main__":
-    list_algorithm = ['CHROM', 'POS']# ['LGI', 'OMIT', 'CHROM', 'POS']
-    list_metric = ['MAE', 'RMSE', 'PCC', 'CCC', 'DTW']
-    list_ROI = ['glabella', 'lower medial forehead', 'left lower lateral forehead', 'right lower lateral forehead']
+    list_algorithm = ['LGI', 'OMIT', 'CHROM', 'POS']   # ['LGI', 'OMIT', 'CHROM', 'POS'].
+    list_metric = ['MAE', 'RMSE', 'PCC', 'CCC', 'DTW']   # ['MAE', 'RMSE', 'PCC', 'CCC', 'DTW'].
+    list_ROI = ['glabella', 'lower medial forehead', 'left lower lateral forehead', 'right lower lateral forehead']   # 28 facial ROIs.
     # create the description file.
     with open(os.path.join(os.getcwd(), 'plot', 'motion', 'description_fringe.txt'), 'w') as f:
         pass
@@ -122,4 +122,5 @@ if __name__ == "__main__":
     for metric in list_metric:
         # loop over all selected ROIs.
         for ROI in list_ROI:
+            print([metric, ROI])
             main_comparison_fringe(metric=metric, ROI=ROI, list_algorithm=list_algorithm)

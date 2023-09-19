@@ -1,5 +1,5 @@
 """
-Transform RGB signals to BVP and HR signals.
+generate ground truth BPM data using existing BVP data for UBFC-Phys dataset.
 """
 
 # Author: Shuo Li
@@ -7,6 +7,7 @@ Transform RGB signals to BVP and HR signals.
 
 import os
 import cv2
+import yaml
 import numpy as np
 import pandas as pd
 from tqdm import tqdm
@@ -74,7 +75,10 @@ def main_gen_gtHR(dir_dataset):
             dir_bpm = os.path.join(dir_dataset, 's'+str(num_attendant), 'bpm_s'+str(num_attendant)+'_T'+str(num_condition)+'.csv')
             df_sig_bpm.to_csv(dir_bpm, index=False, header=None)
 
+
 if __name__ == "__main__":
     # generate ground truth HR for UBFC-Phys.
-    dir_dataset = 'E:/dataset/UBFC-Phys'
+    dir_crt = os.getcwd()
+    dir_option = os.path.join(dir_crt, 'config', 'options.yaml')
+    dir_dataset = yaml.safe_load(open(dir_option))['UBFC-Phys']['dir_dataset']
     main_gen_gtHR(dir_dataset=dir_dataset)
