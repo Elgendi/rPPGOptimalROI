@@ -1,0 +1,20 @@
+MAE
+Pearson Correlation Coefficient: -0.8203755346149779
+F-statistic: 53.51459831351756
+F-pvalue: 9.075170881592978e-08
+RMSE
+Pearson Correlation Coefficient: -0.8215526005937903
+F-statistic: 53.987368282183546
+F-pvalue: 8.391206172317888e-08
+PCC
+Pearson Correlation Coefficient: 0.8540174034081275
+F-statistic: 70.06351139704236
+F-pvalue: 7.492311017201044e-09
+CCC
+Pearson Correlation Coefficient: 0.847108964551193
+F-statistic: 66.06590147947081
+F-pvalue: 1.3115671285343113e-08
+DTW
+Pearson Correlation Coefficient: -0.6257517216496484
+F-statistic: 16.732599668456256
+F-pvalue: 0.0003690440035803074

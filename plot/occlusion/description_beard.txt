@@ -1,0 +1,80 @@
+MAE
+philtrum
+LeveneResult(statistic=0.09589319549028387, pvalue=0.7574929827780097)
+Ttest_indResult(statistic=1.2107119210606196, pvalue=0.2290093264012346)
+MAE
+glabella
+LeveneResult(statistic=0.34423498746398323, pvalue=0.5587865107559893)
+Ttest_indResult(statistic=-0.3320137264952947, pvalue=0.7406103015833563)
+MAE
+right upper lip
+LeveneResult(statistic=1.3297092426415347, pvalue=0.25175007234983243)
+Ttest_indResult(statistic=1.9230709869733986, pvalue=0.057465903836996096)
+MAE
+left upper lip
+LeveneResult(statistic=1.1094373679021583, pvalue=0.294875938360952)
+Ttest_indResult(statistic=1.637036625033698, pvalue=0.1049313674890742)
+RMSE
+philtrum
+LeveneResult(statistic=1.101014913136387, pvalue=0.29670554964648654)
+Ttest_indResult(statistic=1.4464744927295627, pvalue=0.15133556506910978)
+RMSE
+glabella
+LeveneResult(statistic=0.4186857451254912, pvalue=0.519153995208078)
+Ttest_indResult(statistic=-0.02032726281514714, pvalue=0.9838249406648333)
+RMSE
+right upper lip
+LeveneResult(statistic=4.375175684116768, pvalue=0.03913381976729935)
+Ttest_indResult(statistic=2.2397945693163805, pvalue=0.027436108491211204)
+RMSE
+left upper lip
+LeveneResult(statistic=3.0473419253953318, pvalue=0.08410244143119122)
+Ttest_indResult(statistic=2.010981710660794, pvalue=0.0471613438836123)
+PCC
+philtrum
+LeveneResult(statistic=0.6250089270052495, pvalue=0.43116115454635373)
+Ttest_indResult(statistic=-1.3114002304309387, pvalue=0.19288327934510388)
+PCC
+glabella
+LeveneResult(statistic=0.9984637997603231, pvalue=0.3202209054831946)
+Ttest_indResult(statistic=0.2057610697502263, pvalue=0.8374178412221742)
+PCC
+right upper lip
+LeveneResult(statistic=1.1551048652988374, pvalue=0.2852052171600303)
+Ttest_indResult(statistic=-1.7191371416023045, pvalue=0.08884625523615929)
+PCC
+left upper lip
+LeveneResult(statistic=0.9126710685322278, pvalue=0.3418314049005704)
+Ttest_indResult(statistic=-0.7136553509612563, pvalue=0.4771899394613207)
+CCC
+philtrum
+LeveneResult(statistic=0.6730289896350845, pvalue=0.41405128613026476)
+Ttest_indResult(statistic=-1.2595864716560363, pvalue=0.21090436735396562)
+CCC
+glabella
+LeveneResult(statistic=2.0540433694869695, pvalue=0.1550854257990144)
+Ttest_indResult(statistic=0.28132077023210317, pvalue=0.7790762196959815)
+CCC
+right upper lip
+LeveneResult(statistic=1.1299667627502397, pvalue=0.29047708882869183)
+Ttest_indResult(statistic=-1.5197433972455618, pvalue=0.13189677615390658)
+CCC
+left upper lip
+LeveneResult(statistic=1.0136959627859121, pvalue=0.3165766190618245)
+Ttest_indResult(statistic=-0.5864836739085006, pvalue=0.5589415511205751)
+DTW
+philtrum
+LeveneResult(statistic=0.7724847046979434, pvalue=0.38166716507850107)
+Ttest_indResult(statistic=-1.0379436093201286, pvalue=0.30193096068355685)
+DTW
+glabella
+LeveneResult(statistic=0.013693414328100168, pvalue=0.9070921418966095)
+Ttest_indResult(statistic=-0.8626836045985586, pvalue=0.39048403662801034)
+DTW
+right upper lip
+LeveneResult(statistic=2.6833260282527367, pvalue=0.10471184312178189)
+Ttest_indResult(statistic=-1.561090854726546, pvalue=0.12182756126080699)
+DTW
+left upper lip
+LeveneResult(statistic=2.9024278233842447, pvalue=0.091715429823947)
+Ttest_indResult(statistic=-1.4503329091367456, pvalue=0.15025941410652727)

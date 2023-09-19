@@ -1,0 +1,50 @@
+dermal
+MAE
+Pearson Correlation Coefficient: 0.5121884777854937
+F-statistic: 9.246448983114533
+F-pvalue: 0.005329249086712537
+epidermal
+MAE
+Pearson Correlation Coefficient: 0.32987970735500166
+F-statistic: 3.174822288466324
+F-pvalue: 0.08646637575796325
+dermal
+RMSE
+Pearson Correlation Coefficient: 0.5227569649928326
+F-statistic: 9.776936853478894
+F-pvalue: 0.0043166340938442195
+epidermal
+RMSE
+Pearson Correlation Coefficient: 0.3334998857209722
+F-statistic: 3.2536551125031132
+F-pvalue: 0.08286418433202651
+dermal
+PCC
+Pearson Correlation Coefficient: -0.5270568596736825
+F-statistic: 10.00055606991578
+F-pvalue: 0.003954344504031494
+epidermal
+PCC
+Pearson Correlation Coefficient: -0.34237372027513335
+F-statistic: 3.4524038368566243
+F-pvalue: 0.07451864072367324
+dermal
+CCC
+Pearson Correlation Coefficient: -0.5225715371892304
+F-statistic: 9.767396932286825
+F-pvalue: 0.004332873278081629
+epidermal
+CCC
+Pearson Correlation Coefficient: -0.33773425923738637
+F-statistic: 3.3475066092768193
+F-pvalue: 0.07879729964586356
+dermal
+DTW
+Pearson Correlation Coefficient: 0.35618811668850975
+F-statistic: 3.7779245241519495
+F-pvalue: 0.06283094504231822
+epidermal
+DTW
+Pearson Correlation Coefficient: 0.25548116867062154
+F-statistic: 1.815537594289323
+F-pvalue: 0.18947112583784967
