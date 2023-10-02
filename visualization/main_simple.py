@@ -1,5 +1,5 @@
 """
-the experiment for examining the effect of ROI selection under different subject's motion types.
+the experiment for examining the effect of ROI selection in the simple environment.
 """
 
 # Author: Shuo Li
@@ -10,8 +10,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-def main(metric, list_algorithm):
-    """main function to evaluate the effect of ROI selection under different subject's motion types.
+def main_simple(metric, list_algorithm):
+    """main function to evaluate the effect of ROI selection in the simple environment.
     Parameters
     ----------
     metric: evaluation metric.   # ['MAE', 'RMSE', 'PCC', 'CCC', 'DTW'].
@@ -126,7 +126,6 @@ def main(metric, list_algorithm):
     plt.boxplot(x=data_roi, zorder=True, labels=list(range(1, len(list_roi_name)+1)))
     dir_save = os.path.join(dir_crt, 'plot', 'simple', metric+'.png')
     plt.savefig(dir_save, dpi=600, bbox_inches='tight')
-    # print ranking.
     print(list_roi_name)
 
 
@@ -136,4 +135,4 @@ if __name__ == "__main__":
     # loop over all performance evaluation metrics.
     for metric in list_metric:
         print(metric)
-        main(metric=metric, list_algorithm=list_algorithm)
+        main_simple(metric=metric, list_algorithm=list_algorithm)
