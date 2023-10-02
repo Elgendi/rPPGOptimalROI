@@ -9,12 +9,10 @@ This project mainly comprises five parts:
 2. Examinining the influence of subject's motion types on ROI performance.
 3. Examinining the influence of light intensities on ROI performance.
 4. Examinining the impact of fringe and beard occlusion on ROI performance.
-5. Correlation analysis of different potential factors that are influencing ROI performance. Included factors are: dermal thickness, epidermal thickness, facial surface orientation, ROI size (number of pixels).
 ### Main Contributions
 1. We compared the performance of 28 facial ROIs under different motion types and illumination levels.
 2. We examined the impact of fringe and beard occlusion on rPPG signal extraction and HR estimation.
 3. We proposed the utilization of glabella as the preferred facial ROI. In contrast to forehead and cheek that are more commonly employed, our findings indicate that glabella demonstrates a performance level at least on par with these regions and a better robustness in complex environments.
-4. We revealed the possibility of analyzing the causes of ROI performance variations from multiple perspectives. These three perspectives encompass the thickness of both the epidermis and dermis, the ratio of diffuse to specular reflection due to the reflection angle, and the ROI area.
 ## Package Requirements
 - dtaidistance==2.3.10   
 - matplotlib==3.5.3  
