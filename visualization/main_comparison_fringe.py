@@ -113,7 +113,7 @@ def main_comparison_fringe(metric, ROI, list_algorithm):
 
 if __name__ == "__main__":
     list_algorithm = ['LGI', 'OMIT', 'CHROM', 'POS']   # ['LGI', 'OMIT', 'CHROM', 'POS'].
-    list_metric = ['MAE', 'RMSE', 'PCC', 'CCC', 'DTW']   # ['MAE', 'RMSE', 'PCC', 'CCC', 'DTW'].
+    list_metric = ['MAE', 'PCC']   # ['MAE', 'RMSE', 'PCC', 'CCC', 'DTW'].
     list_ROI = ['glabella', 'lower medial forehead', 'left lower lateral forehead', 'right lower lateral forehead']   # 28 facial ROIs.
     # create the description file.
     with open(os.path.join(os.getcwd(), 'plot', 'motion', 'description_fringe.txt'), 'w') as f:

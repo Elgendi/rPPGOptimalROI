@@ -1,64 +1,32 @@
 MAE
 glabella
-LeveneResult(statistic=0.00857710434502881, pvalue=0.9264063129048385)
-Ttest_indResult(statistic=0.2402912892092578, pvalue=0.8106222108979786)
+LeveneResult(statistic=0.004409426746417052, pvalue=0.9471961189434045)
+Ttest_indResult(statistic=0.2690302770909143, pvalue=0.7884897987453876)
 MAE
 lower medial forehead
-LeveneResult(statistic=1.3834957303701088, pvalue=0.24244563749847786)
-Ttest_indResult(statistic=3.6528381924600835, pvalue=0.0004245839250307087)
+LeveneResult(statistic=1.0100387544154927, pvalue=0.31744656555198125)
+Ttest_indResult(statistic=3.301153518371719, pvalue=0.0013572910876334617)
 MAE
 left lower lateral forehead
-LeveneResult(statistic=0.8869902293369217, pvalue=0.348683028481222)
-Ttest_indResult(statistic=2.194252360257815, pvalue=0.03065546140714693)
+LeveneResult(statistic=0.43484614927634113, pvalue=0.5112159424315112)
+Ttest_indResult(statistic=1.637682608766839, pvalue=0.10479619801981203)
 MAE
 right lower lateral forehead
-LeveneResult(statistic=5.848110824340327, pvalue=0.017499933927865037)
-Ttest_indResult(statistic=4.102763740147769, pvalue=8.621785430629948e-05)
-RMSE
-glabella
-LeveneResult(statistic=0.08837891379970084, pvalue=0.7668973195498476)
-Ttest_indResult(statistic=0.052454456053124925, pvalue=0.9582767264927253)
-RMSE
-lower medial forehead
-LeveneResult(statistic=0.14722498423819552, pvalue=0.7020588780916794)
-Ttest_indResult(statistic=4.012362919202649, pvalue=0.00011986814063895492)
-RMSE
-left lower lateral forehead
-LeveneResult(statistic=0.6219320330960334, pvalue=0.4322938398663293)
-Ttest_indResult(statistic=2.4773916904392386, pvalue=0.015001397489969403)
-RMSE
-right lower lateral forehead
-LeveneResult(statistic=3.600380793838065, pvalue=0.060803188246698385)
-Ttest_indResult(statistic=4.179156227193477, pvalue=6.503745123940399e-05)
+LeveneResult(statistic=4.439477212597849, pvalue=0.03775159093941631)
+Ttest_indResult(statistic=3.4174901096037944, pvalue=0.0009320250372588619)
 PCC
 glabella
-LeveneResult(statistic=4.8033652337901005, pvalue=0.03084838581788375)
-Ttest_indResult(statistic=-1.1413956107750478, pvalue=0.25657430001190945)
+LeveneResult(statistic=3.8133508734330293, pvalue=0.05378875422540177)
+Ttest_indResult(statistic=-1.1537910795788515, pvalue=0.25148029834675695)
 PCC
 lower medial forehead
-LeveneResult(statistic=3.7337773963677874, pvalue=0.05630171863208297)
-Ttest_indResult(statistic=-2.371333791459187, pvalue=0.01974218639195771)
+LeveneResult(statistic=5.56875661341591, pvalue=0.020329464884628473)
+Ttest_indResult(statistic=-2.7798576585828783, pvalue=0.0065564235002195815)
 PCC
 left lower lateral forehead
-LeveneResult(statistic=2.8016390173409533, pvalue=0.09745759841926475)
-Ttest_indResult(statistic=-2.223707484047806, pvalue=0.028537764814137216)
+LeveneResult(statistic=3.8149443153361475, pvalue=0.05373968382604129)
+Ttest_indResult(statistic=-2.1941268537927137, pvalue=0.03066477052487716)
 PCC
 right lower lateral forehead
-LeveneResult(statistic=0.4198060444842677, pvalue=0.518596715756425)
-Ttest_indResult(statistic=-2.642923095348637, pvalue=0.009614242157818878)
-CCC
-glabella
-LeveneResult(statistic=4.614106636377405, pvalue=0.03425365250292394)
-Ttest_indResult(statistic=-1.1213410942400492, pvalue=0.26496916966214146)
-CCC
-lower medial forehead
-LeveneResult(statistic=4.171820679204834, pvalue=0.04387250332949463)
-Ttest_indResult(statistic=-2.3414256598731233, pvalue=0.021300032477153442)
-CCC
-left lower lateral forehead
-LeveneResult(statistic=3.3605721812460585, pvalue=0.0699065428369516)
-Ttest_indResult(statistic=-2.286999779117356, pvalue=0.02441575834469532)
-CCC
-right lower lateral forehead
-LeveneResult(statistic=0.4278023476012218, pvalue=0.5146495030977106)
-Ttest_indResult(statistic=-2.5986150717732346, pvalue=0.010851040228777685)
+LeveneResult(statistic=0.42455226521943706, pvalue=0.5162474386251834)
+Ttest_indResult(statistic=-2.883347423901266, pvalue=0.004866763380435975)

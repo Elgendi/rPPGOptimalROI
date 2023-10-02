@@ -1,80 +1,32 @@
 MAE
 philtrum
-LeveneResult(statistic=0.20897280249269573, pvalue=0.6486173479402547)
-Ttest_indResult(statistic=0.9007389303731713, pvalue=0.3700049288348132)
+LeveneResult(statistic=0.040191498766290794, pvalue=0.8415351869845542)
+Ttest_indResult(statistic=0.9903008628749843, pvalue=0.32454271666767076)
 MAE
-glabella
-LeveneResult(statistic=0.40180087311872276, pvalue=0.5276839704997688)
-Ttest_indResult(statistic=-0.35333846100431704, pvalue=0.7246175898674097)
+chin
+LeveneResult(statistic=0.020250681065886306, pvalue=0.8871405549240499)
+Ttest_indResult(statistic=0.40857980270254435, pvalue=0.683767590465199)
 MAE
 right upper lip
-LeveneResult(statistic=1.7586182852516363, pvalue=0.1879765198830261)
-Ttest_indResult(statistic=1.4829959457190989, pvalue=0.14138545373425326)
+LeveneResult(statistic=1.4937250724897528, pvalue=0.22466317137337052)
+Ttest_indResult(statistic=1.605218184880063, pvalue=0.11176507309654404)
 MAE
 left upper lip
-LeveneResult(statistic=1.585127614663174, pvalue=0.21110854146698474)
-Ttest_indResult(statistic=1.258569418834578, pvalue=0.2112700876757982)
-RMSE
-philtrum
-LeveneResult(statistic=1.385841085047173, pvalue=0.24204967502162156)
-Ttest_indResult(statistic=1.1571324866884307, pvalue=0.25011947126100653)
-RMSE
-glabella
-LeveneResult(statistic=0.4068949778258167, pvalue=0.5250842818624982)
-Ttest_indResult(statistic=-0.05947378238341435, pvalue=0.952699677127518)
-RMSE
-right upper lip
-LeveneResult(statistic=4.63717964184342, pvalue=0.033817932632417384)
-Ttest_indResult(statistic=1.8734242089499047, pvalue=0.06408402188205141)
-RMSE
-left upper lip
-LeveneResult(statistic=3.7203577869403808, pvalue=0.05673785116047447)
-Ttest_indResult(statistic=1.72879868970022, pvalue=0.08709370051047095)
+LeveneResult(statistic=1.5022921196246233, pvalue=0.22334887098640205)
+Ttest_indResult(statistic=1.4041413902725381, pvalue=0.16353758531747728)
 PCC
 philtrum
-LeveneResult(statistic=0.7822716232233989, pvalue=0.3786803217156094)
-Ttest_indResult(statistic=-1.2627208234547604, pvalue=0.2097802170457888)
+LeveneResult(statistic=0.5482452640777945, pvalue=0.4608616638091152)
+Ttest_indResult(statistic=-1.0828568018957552, pvalue=0.28161281063675514)
 PCC
-glabella
-LeveneResult(statistic=1.3126278541919756, pvalue=0.2547973095733861)
-Ttest_indResult(statistic=0.31418311958164374, pvalue=0.7540708744336959)
+chin
+LeveneResult(statistic=4.613625114971753, pvalue=0.03426280908151985)
+Ttest_indResult(statistic=-0.8981317315617008, pvalue=0.37138596526635104)
 PCC
 right upper lip
-LeveneResult(statistic=1.4635862069159824, pvalue=0.22936221293506878)
-Ttest_indResult(statistic=-1.7486459506839385, pvalue=0.08358239670576983)
+LeveneResult(statistic=1.1264825333833222, pvalue=0.29121765735751837)
+Ttest_indResult(statistic=-1.5567899486929995, pvalue=0.12284563165594808)
 PCC
 left upper lip
-LeveneResult(statistic=1.3349728469208697, pvalue=0.2508202182352209)
-Ttest_indResult(statistic=-0.8984278186273068, pvalue=0.3712289642585962)
-CCC
-philtrum
-LeveneResult(statistic=0.946361681056094, pvalue=0.33311762584332527)
-Ttest_indResult(statistic=-1.1590354912627592, pvalue=0.24934678957994647)
-CCC
-glabella
-LeveneResult(statistic=2.5159651143299606, pvalue=0.11602174919346127)
-Ttest_indResult(statistic=0.4482130687427792, pvalue=0.6550199934266528)
-CCC
-right upper lip
-LeveneResult(statistic=1.3993989037213364, pvalue=0.23977627731035692)
-Ttest_indResult(statistic=-1.5425218511570995, pvalue=0.12627145333317272)
-CCC
-left upper lip
-LeveneResult(statistic=1.446562049523815, pvalue=0.2320694388947468)
-Ttest_indResult(statistic=-0.7427076041968915, pvalue=0.4594913126944786)
-DTW
-philtrum
-LeveneResult(statistic=0.810677714527398, pvalue=0.37019675183945955)
-Ttest_indResult(statistic=-1.227081192785197, pvalue=0.22282434397803552)
-DTW
-glabella
-LeveneResult(statistic=2.7031546933232504, pvalue=0.10345534091614463)
-Ttest_indResult(statistic=-1.0277401284663603, pvalue=0.3066817675343145)
-DTW
-right upper lip
-LeveneResult(statistic=2.2217099051885363, pvalue=0.13939516418402834)
-Ttest_indResult(statistic=-1.7340196431000612, pvalue=0.08615850561363135)
-DTW
-left upper lip
-LeveneResult(statistic=3.8813482082265462, pvalue=0.051737002123853466)
-Ttest_indResult(statistic=-1.5191118899524556, pvalue=0.13205549808456854)
+LeveneResult(statistic=1.4428754128581986, pvalue=0.23266082830113954)
+Ttest_indResult(statistic=-0.6512926952049428, pvalue=0.5164299505776979)

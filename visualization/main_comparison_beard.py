@@ -38,12 +38,12 @@ def main_comparison_beard(metric, ROI, list_algorithm):
         list_UBFC_PHYS_whole = list(range(1, 57))
         # beard list.
         list_UBFC_RPPG_beard = [3, 12, 13, 14, 23, 24, 30, 31, 32, 39, 44]
-        list_UBFC_PHYS_beard = [1, 2, 19, 38, 48, 49]
+        list_UBFC_PHYS_beard = [2, 19, 38, 48, 49]
         # pure list.
         list_UBFC_RPPG_pure = list(set(list_UBFC_RPPG_whole).difference(set(list_UBFC_RPPG_beard)))
         list_UBFC_PHYS_pure = list(set(list_UBFC_PHYS_whole).difference(set(list_UBFC_PHYS_beard)))
     
-        # collect data of subjects with fringe..
+        # collect data of subjects with beard.
         # UBFC-rPPG dataset.
         list_idx_tmp = []
         for i in range(len(df_UBFC_RPPG)):
@@ -113,8 +113,8 @@ def main_comparison_beard(metric, ROI, list_algorithm):
 
 if __name__ == "__main__":
     list_algorithm = ['LGI', 'OMIT', 'CHROM', 'POS']   # ['LGI', 'OMIT', 'CHROM', 'POS'].
-    list_metric = ['MAE', 'RMSE', 'PCC', 'CCC', 'DTW']   # ['MAE', 'RMSE', 'PCC', 'CCC', 'DTW'].
-    list_ROI = ['philtrum', 'glabella', 'right upper lip', 'left upper lip']   # 28 facial ROIs.
+    list_metric = ['MAE', 'PCC']   # ['MAE', 'RMSE', 'PCC', 'CCC', 'DTW'].
+    list_ROI = ['philtrum', 'chin', 'right upper lip', 'left upper lip']   # 28 facial ROIs.
     # create the description file.
     with open(os.path.join(os.getcwd(), 'plot', 'occlusion', 'description_beard.txt'), 'w') as f:
         pass
