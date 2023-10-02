@@ -63,36 +63,15 @@ optimal_roi_rppg
 │    ├─ main_extract_feature.py
 │    ├─ main_extract_rgb.py
 │    ├─ main_gen_gtHR.py
-│    ├─ main_new.py
 │    └─ main_rgb2hr.py
 ├─ plot
-│    ├─ corr
-│    │    ├─ dermal_CCC.png
-│    │    ├─ dermal_DTW.png
-│    │    ├─ dermal_MAE.png
-│    │    ├─ dermal_PCC.png
-│    │    ├─ dermal_RMSE.png
-│    │    ├─ ...
+│    ├─ simple
+│    │    └─ ...
 │    ├─ illumination
-│    │    ├─ illumination_CCC.png
-│    │    ├─ illumination_DTW.png
-│    │    ├─ illumination_MAE.png
-│    │    ├─ illumination_PCC.png
-│    │    └─ illumination_RMSE.png
+│    │    └─ ...
 │    ├─ motion
-│    │    ├─ description.txt
-│    │    ├─ gym_CCC.png
-│    │    ├─ gym_DTW.png
-│    │    ├─ gym_MAE.png
-│    │    ├─ gym_PCC.png
-│    │    ├─ gym_RMSE.png
 │    │    ├─ ...
 │    └─ occlusion
-│           ├─ beard_glabella_CCC.png
-│           ├─ beard_glabella_DTW.png
-│           ├─ beard_glabella_MAE.png
-│           ├─ beard_glabella_PCC.png
-│           ├─ beard_glabella_RMSE.png
 │           ├─ ...
 ├─ result
 │    ├─ BUAA-MIHR
@@ -121,11 +100,9 @@ optimal_roi_rppg
 └─ visualization
        ├─ main_comparison_beard.py
        ├─ main_comparison_fringe.py
-       ├─ main_corr_pixel.py
-       ├─ main_corr_skin.py
-       ├─ main_corr_so.py
-       ├─ main_illumination.py
-       └─ main_motion.py
+       ├─ main_illumination_rank.py
+       └─ main_motion_rank.py
+       └─ main_simple.py
 ```
 ## Datasets
 1. UBFC-rPPG: https://sites.google.com/view/ybenezeth/ubfcrppg
@@ -141,13 +118,11 @@ For Linux, execute: **python3 (...).py**
 3. Extract features (ROI size, facial surface orientation) from facial videos: **python **"./main/main_rgb2hr.py"**
 4. Generate ground truth heart rate values for UBFC-Phys dataset: **python "./main/main_gen_gtHR.py"**
 5. Evaluate the performance of different facial ROIs on selected datasets: **python "./main/main_evaluation.py"**
-6. Compare the ROI performance under different motion types: **python "./visualization/main_motion.py"**
-7. Compare the ROI performance under different illumination levels: **python "./visualization/main_illumination.py"**
-8. Examine the influence of beard coverage on the performance of relevant facial ROIs: **python "./visualization/main_comparison_beard.py"**
-9. Examine the influence of fringe coverage on the performance of relevant facial ROIs: **python "./visualization/main_comparison_fringe.py"**
-10. Correlation analysis between facial surface orientation and ROI performance: **python "./visualization/main_corr_so.py"**
-11. Correlation analysis between skin thickness and ROI performance: **python "./visualization/main_corr_skin.py"**
-12. Correlation analysis between ROI size (number of pixels) and ROI performance: **python "./visualization/main_corr_pixel.py"**
+6. Compare the ROI performance in the simple environment: **python "./visualization/main_simple.py"**
+7. Compare the ROI performance under different motion types: **python "./visualization/main_motion_rank.py"**
+8. Compare the ROI performance under different illumination levels: **python "./visualization/main_illumination_rank.py"**
+9. Examine the influence of beard coverage on the performance of relevant facial ROIs: **python "./visualization/main_comparison_beard.py"**
+10. Examine the influence of fringe coverage on the performance of relevant facial ROIs: **python "./visualization/main_comparison_fringe.py"**
 ### Contact
 If you have any questions, please feel free to contact me through email (shuoli@student.ethz.ch or shuoli199909@outlook.com)!
 ## Authors and acknowledgment
